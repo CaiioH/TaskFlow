@@ -28,10 +28,12 @@
 
 2. **Instale as dependências utilizando o Poetry (gerenciador de dependências do projeto):**
 
+   ```bash
    poetry install
 
 3. **Ative o ambiente virtual e inicie o servidor Flask:**
 
+   ```bash
     poetry shell
     flask run
 

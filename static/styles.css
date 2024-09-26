@@ -1,0 +1,210 @@
+.btn_editar:hover, .btn_excluir:hover, .add_task_container:hover{
+    transform: scale(1.07);
+}
+
+body {
+    font-family: 'Fredericka the Great', cursive;
+    background: linear-gradient(135deg, #B0BEC5, #78909C);/* Exemplo de fundo */
+    color: #333; /* Texto principal */
+}
+
+.container_titulo{
+    /* border: 1px solid blue; */
+    display: flex;
+    font-size: 30px;
+    letter-spacing: 5px;
+    justify-content: center;
+}
+
+/* Estilo para os títulos */
+h1, h2, h3 {
+    color: #212121; /* Um tom de cinza mais escuro para os títulos */
+}
+
+/* Estilo para os botões */
+button {
+    background-color: #2cc731; /* Botão de adicionar em verde */
+    color: white; /* Texto do botão */
+    border: none; /* Remover borda padrão */
+    padding: 10px 15px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de mão ao passar o mouse */
+    margin: 5px; /* Espaçamento entre botões */
+}
+
+/* Estilo para o botão de editar */
+.btn_editar{
+    padding: 10px 17.5px;
+    transition: .2s;
+}
+
+/* Estilo para o botão de excluir */
+.btn_excluir {
+    background-color: #F44336; /* Botão de excluir em vermelho */
+    transition: .2s;
+}
+
+/* Estilo para campos de entrada */
+input[type="text"], input[type="number"], textarea {
+    width: 100%; /* Largura total */
+    padding: 10px 0; /* Espaçamento interno */
+    margin: 10px 0; /* Margem vertical */
+    border: 1px solid #B0BEC5; /* Borda cinza */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+
+.add_task_container{
+    background-color: #2196F3;
+    display: flex;
+    border-radius: 10px;
+    padding: 10px;
+    width: 150px;
+    justify-content: center;
+    transition: .2s;
+}
+
+/* Estilo para links, se necessário */
+a {
+    display: flex;
+    color: white; /* Azul para links */
+    text-decoration: none; /* Remover sublinhado */
+}
+
+
+.container_tarefas{
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container_tarefas h2{
+    /* border: 1px solid pink; */
+    font-size: 30px;
+}
+
+.titulo_tarefas{
+    /* border: 1px solid yellow; */
+}
+
+.container_itens{
+    /* border: 1px solid pink; */
+    padding: 10px 20px;
+    width: 1300px;
+    flex-wrap: wrap;
+}
+
+.lista_tarefas{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* border: 1px solid black; */
+}
+.card {
+    background-color: rgba(255, 255, 255, 0.137);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 
+                0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Efeito ao passar o mouse */
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 
+                0 12px 40px rgba(0, 0, 0, 0.2);
+    transform: scale(1.006);
+            
+}
+
+
+.tarefa{
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.tarefa_h3{
+    /* border: 1px solid red; */
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+/* Estilos para o status das tarefas */
+.status-concluido {
+    background-color: #2cc731; /* Verde para concluído */
+    color: black;
+}
+
+.status-pendente {
+    background-color: #FFA500; /* Laranja para pendente */
+    color: black;
+}
+
+.status-andamento {
+    background-color: #FFD700; /* Amarelo para em andamento */
+    color: black;
+}
+
+.tarefa h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    border-radius: 30px;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+}
+
+
+.tit_desc{
+    /* border: 1px solid green; */
+    margin: 0 20px;
+    width: 100vh;
+}
+
+.tit_desc p{
+    /* border: 1px solid black; */
+    flex-direction: column;
+    overflow-wrap: break-word;
+}
+
+.datas{
+    /* border: 1px solid white; */
+    background-color: #78909C;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+
+
+.botoes_tarefa{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+
+textarea {
+    resize: none;
+    max-height: 200px;
+
+}
+
+input,
+textarea {
+    outline: 0;
+    /* padding: 10px 5px; */
+    background-color: rgba(0, 0, 0, 0.459);
+    color: #fffbfb;
+    font-size: 15px;
+}

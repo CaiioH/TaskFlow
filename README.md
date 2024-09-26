@@ -35,6 +35,7 @@
 
    ```bash
     poetry shell
+   
     flask run
 
 ## Estrutura do Projeto
